@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento Financeiro e Juros Compostos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca Chart.js para o gráfico de evolução -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Simulador de Reserva Financeira e Juros Compostos</h1>
+        <p>Projeto de Educação Financeira — 1ª Série do Ensino Médio</p>
+    </header>
+
+    <main class="container">
+        <section class="info-box">
+            <span><strong>Taxa de Juros Anual:</strong> 5%</span>
+            <span><strong>Período:</strong> 2026 a 2032 (18 aos 24 anos)</span>
+        </section>
+
+        <section class="card">
+            <h2>Tabela de Projeção Financeira</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Idade</th>
+                            <th>Salário</th>
+                            <th>Reserva Anual</th>
+                            <th>Valor Inicial</th>
+                            <th>Rendimento (5%)</th>
+                            <th>Valor Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026</td>
+                            <td>18 anos</td>
+                            <td>R$ 1.500,00</td>
+                            <td>R$ 180,00</td>
+                            <td>R$ 0,00</td>
+                            <td>R$ 0,00</td>
+                            <td><strong>R$ 180,00</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2027</td>
+                            <td>19 anos</td>
+                            <td>R$ 1.650,00</td>
+                            <td>R$ 198,00</td>
+                            <td>R$ 180,00</td>
+                            <td>R$ 9,00</td>
+                            <td><strong>R$ 387,00</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2028</td>
+                            <td>20 anos</td>
+                            <td>R$ 1.815,00</td>
+                            <td>R$ 217,80</td>
+                            <td>R$ 387,00</td>
+                            <td>R$ 19,35</td>
+                            <td><strong>R$ 624,15</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2029</td>
+                            <td>21 anos</td>
+                            <td>R$ 1.996,50</td>
+                            <td>R$ 239,58</td>
+                            <td>R$ 624,15</td>
+                            <td>R$ 31,21</td>
+                            <td><strong>R$ 894,94</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2030</td>
+                            <td>22 anos</td>
+                            <td>R$ 2.196,15</td>
+                            <td>R$ 263,54</td>
+                            <td>R$ 894,94</td>
+                            <td>R$ 44,75</td>
+                            <td><strong>R$ 1.203,22</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2031</td>
+                            <td>23 anos</td>
+                            <td>R$ 2.415,77</td>
+                            <td>R$ 289,89</td>
+                            <td>R$ 1.203,22</td>
+                            <td>R$ 60,16</td>
+                            <td><strong>R$ 1.553,28</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2032</td>
+                            <td>24 anos</td>
+                            <td>R$ 2.657,34</td>
+                            <td>R$ 318,88</td>
+                            <td>R$ 1.553,28</td>
+                            <td>R$ 77,66</td>
+                            <td><strong>R$ 1.949,82</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Gráfico de Crescimento do Patrimônio</h2>
+            <div class="chart-container">
+                <canvas id="graficoEvolucao"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para a disciplina de Educação Financeira — 1ª Série do Ensino Médio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
